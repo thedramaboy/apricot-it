@@ -8,6 +8,10 @@ interface IPost {
 }
 
 async function getPosts() {
+
+    // Loading screen test.
+    // await new Promise(resolve => setTimeout(resolve, 2000));
+
     const res = await fetch('https://jsonplaceholder.typicode.com/posts', {
         cache: "no-store"
     })
