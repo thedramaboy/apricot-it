@@ -54,12 +54,12 @@ export async function generateStaticParams() {
     }))
 }
 
-// async function addComment(formData: FormData) {
-//     'use server';
+async function addComment(formData: FormData) {
+    'use server';
 
-//     const comment = formData.get('comment');
+    const comment = formData.get('comment');
 
-//     console.log("New comment received: ", comment);
-//     console.log("---")
+    console.log("New comment received: ", comment);
+    console.log("---")
 
-// }
+}
