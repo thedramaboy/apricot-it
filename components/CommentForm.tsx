@@ -12,14 +12,7 @@ export default function CommentForm({ action } : { action: (formData: FormData) 
                     className="w-full p-2 border rounded-md focus:ring-2 focus:ring-blue-500"
                     placeholder="Write your comment here..."
                     required
-                    >
-                </textarea>
-                <button
-                    type="submit"
-                    className="px-4 py-2 bg-blue-600 text-white font-semibold rounded hover:bg-blue-700 transition-colors"
-                >
-                    Submit comment
-                </button>
+                    />
             </div>
             <SubmitButton/>
         </form>
