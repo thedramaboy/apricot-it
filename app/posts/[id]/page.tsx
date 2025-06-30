@@ -1,4 +1,5 @@
 import Link from "next/link";
+import CommentForm from "@/components/CommentForm";
 
 interface IPost {
     userId: string;
@@ -40,6 +41,7 @@ export default async function PostDetailPage ({ params } : {params: {id: string}
                     </Link>
                 </div>
             </div>
+            <CommentForm action={addComment}/>
         </div>
     );
 

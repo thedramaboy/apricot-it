@@ -1,4 +1,5 @@
 'use client';
+import SubmitButton from "./SubmitButton";
 
 export default function CommentForm({ action } : { action: (formData: FormData) => void }) {
     return (
@@ -20,6 +21,7 @@ export default function CommentForm({ action } : { action: (formData: FormData) 
                     Submit comment
                 </button>
             </div>
+            <SubmitButton/>
         </form>
     );
 }
