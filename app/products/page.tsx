@@ -143,12 +143,42 @@ export default function ProductPage() {
                                         ))}
                                     </ul>
                                 </div>
+                                
+                                {/* Action buttons */}
+                                <div className='flex gap-3'>
+                                    <button className='flex-1 bg-blue-600 text-white py-3 px-6 rounded-lg font-semibold hover:bg-blue-700 transition-colors'>
+                                        Start Free Trial
+                                    </button>
+                                    <Link
+                                        href={`/products/${product.id}`}
+                                        className='flex-1 border-2 border-blue-600 text-blue-600 py-3 px-6 rounded-lg font-semibold hover:bg-blue-50 transition-colors text-center'
+                                    >
+                                        Learn More
+                                    </Link>
+                                </div>
                             </div>
                         ))}
                     </div>
                 </div>
             </section>
 
+            {/* Call to action */}
+            <section className='bg-blue-600 text-white py-16'>
+                    <div className='container mx-auto px-6 text-center'>
+                        <h2 className='text-3xl font-bold mb-4'>
+                            Can&apos;t decide which solution is right for you?
+                        </h2>
+                        <p className='text-xl mb-8'>
+                            Our experts are here to help you choose the perfect management solution
+                        </p>
+                        <Link
+                            href="/contact"
+                            className='bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors inline-block'
+                        >
+                            Get Free Consultation
+                        </Link>
+                    </div>
+            </section>
         </main>
     );
 }
