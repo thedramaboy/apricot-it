@@ -1,5 +1,3 @@
-import { LightBulbIcon } from "@heroicons/react/24/solid";
-
 export default function AboutPage() {
     return (
         <main className="min-h-screen bg-gray-50">
